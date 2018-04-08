@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="theme_color_blue">#03a9f4</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="logo_gray">#f7f4f0</color>
+
+
+
+    <color name="white_100">#ffffffff</color>
+    <color name="white_95">#f2ffffff</color>
+    <color name="white_90">#e6ffffff</color>
+    <color name="white_80">#c8ffffff</color>
+    <color name="white_75">#bfffffff</color>
+    <color name="white_70">#b3ffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_10">#1affffff</color>
+    <color name="black_100">#ff000000</color>
+    <color name="black_95">#f2000000</color>
+    <color name="black_90">#e6000000</color>
+    <color name="black_80">#c8000000</color>
+    <color name="black_75">#bf000000</color>
+    <color name="black_70">#b3000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_55">#88000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_40">#64000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="black_35">#59000000</color>
+    <color name="black_25">#40000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_15">#26000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="black_5">#10000000</color>
+
+
+    <color name="hourly_card_high_red">#ffff8519</color>
+    <color name="hourly_card_low_blue">#ff27b1eb</color>
+    <color name="hourly_card_high_red_15">#26ff8519</color>
+    <color name="hourly_card_low_blue_20">#3327b1eb</color>
+    <color name="hourly_card_temp_line_gray">#aba9a9</color>
+    <color name="monthly_card_high_red">#fb8f3e</color>
+    <color name="monthly_card_low_blue">#66a0e8</color>
+    <color name="monthly_card_rain_day_blue">#b274d2f5</color>
+    <color name="monthly_card_high_temp_gray">#888686</color>
+    <color name="monthly_card_low_temp_gray">#8c8c8c</color>
+    <color name="monthly_card_rain_day_gray">#b4b4b4</color>
+
+    <color name="aqi_1">#d07dbf01</color>
+    <color name="aqi_2">#d0ecae56</color>
+    <color name="aqi_3">#d0f59308</color>
+    <color name="aqi_4">#d0f52820</color>
+    <color name="aqi_5">#d0b70e79</color>
+    <color name="aqi_6">#d0420083</color>
+
+    <color name="phenology_title_color">@color/black_80</color>
+    <color name="phenology_desc_color">@color/black_55</color>
+
+
+    <color name="action_bar_bg">@color/black_20</color>
+    <color name="action_bar_text_white">@color/white_80</color>
+    <color name="action_bar_bg_blue">@color/theme_color_blue</color>
+    <color name="card_bg">@color/black_10</color>
+
+
+</resources>

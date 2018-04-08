@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_100"
+        android:padding="10dp"
+        android:text="趋势"
+        android:textAllCaps="true"
+        android:textColor="@color/black_40"
+        android:textSize="14dp"/>
+
+    <com.iap.phenologyweather.view.custom.MyHorizontalScrollView
+        android:id="@+id/hsv_hourly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_100"
+        android:layoutDirection="ltr"
+        android:overScrollMode="never"
+        android:paddingBottom="16dp"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.iap.phenologyweather.view.hourly.NewHourlyLineView
+                android:id="@+id/hourly_line_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/ll_hourly_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.iap.phenologyweather.view.custom.MyHorizontalScrollView>
+
+    <include layout="@layout/include_card_shadow_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_margin_top"
+        android:background="@color/white_100"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:text="详情"
+            android:textAllCaps="true"
+            android:textColor="@color/black_40"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="时间"
+                android:textAllCaps="true"
+                android:textColor="#585858"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="天气"
+                android:textAllCaps="true"
+                android:textColor="#585858"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="风况"
+                android:textAllCaps="true"
+                android:textColor="#585858"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

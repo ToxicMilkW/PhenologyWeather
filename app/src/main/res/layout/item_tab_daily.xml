@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_daily_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:layoutDirection="ltr">
+
+
+    <com.iap.phenologyweather.view.custom.DottedLineView
+        android:id="@+id/dotted_line_daily_item"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_daily_item_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="sds"
+            android:textAllCaps="true"
+            android:textColor="@color/black_60"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/text_daily_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="sds"
+            android:textColor="@color/black_50"
+            android:textSize="11dp" />
+
+        <ImageView
+            android:id="@+id/img_daily_item_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="12dp"/>
+
+        <com.iap.phenologyweather.view.daily.NewDailyLineCurveView
+            android:id="@+id/daily_line_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

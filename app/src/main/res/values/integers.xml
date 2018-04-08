@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_page_min_out_of_data_grid">4</integer>
+</resources>

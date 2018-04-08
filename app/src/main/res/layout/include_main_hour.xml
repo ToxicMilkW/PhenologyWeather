@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black_60"
+        android:text="--"
+        android:textSize="14dp"
+        android:id="@+id/text_main_hour_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_main_hour_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp" />
+
+</LinearLayout>

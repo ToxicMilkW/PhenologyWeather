@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_city_manage_root"
+    tools:context="com.iap.phenologyweather.activity.CityManageActivity">
+
+    <include layout="@layout/iclude_action_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_city_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:padding="3dp"
+        android:tint="@color/black_40"
+        android:src="@drawable/ic_add_city"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_city_manage_add_city"
+        android:paddingTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="60dp" />
+
+</LinearLayout>

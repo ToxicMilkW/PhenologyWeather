@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_weather_more"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="50dp"
+                android:textColor="@color/black_100"
+                android:id="@+id/text_main_current_temp"
+                android:text="--"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_marginLeft="14dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="18dp"
+                        android:textColor="@color/black_90"
+                        android:id="@+id/text_main_current_condition"
+                        android:text="--"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginLeft="4dp"
+                        android:id="@+id/img_main_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="体感温度："
+                        android:textSize="18dp"
+                        android:textColor="@color/black_90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/text_main_real_feel"
+                        android:text="--"
+                        android:textSize="18dp"
+                        android:textColor="@color/black_90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:textSize="16dp"
+                    android:textColor="#ffb81e"
+                    android:id="@+id/text_main_high_low_temp"
+                    android:text="--"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@drawable/bg_aqi_1"
+                android:layout_gravity="bottom"
+                android:id="@+id/ll_aqi"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="空气质量："
+                    android:textSize="14dp"
+                    android:textColor="@color/black_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:id="@+id/text_main_aqi"
+                    android:text="--"
+                    android:textSize="14dp"
+                    android:textColor="@color/black_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/black_5"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:id="@+id/ll_main_hour"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_hour"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@color/black_10"
+                android:layout_marginTop="2dp"
+                android:id="@+id/ll_main_day"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_day"/>
+
+                <ImageView
+                    android:background="@color/black_20"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/include_main_day"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

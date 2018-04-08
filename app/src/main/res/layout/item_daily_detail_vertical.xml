@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_100"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/shape_daily_date_bg"
+        android:id="@+id/ll_daily_detail_date_new"
+        android:paddingLeft="4dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_daily_detail_week_new"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="TUE"
+            android:textColor="@color/white_100"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_daily_detail_date_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:maxLines="1"
+            android:text="9/10"
+            android:textColor="@color/white_100"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_daily_detail_today_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:maxLines="1"
+            android:text="TODAY"
+            android:textColor="@color/white_100"
+            android:textSize="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divide_line_daily"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_daily_detail_icon_new"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="17dp"
+            android:id="@+id/text_daily_detail_condition_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Sunny"
+            android:textColor="@color/black_60" />
+
+        <TextView
+            android:id="@+id/text_daily_detail_high_low_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/black_60"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="SW9" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="风况" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_line2_value_top_margin"
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_uv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Low" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_uv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="UV" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="07:10" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="日出" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_line2_value_top_margin"
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="18:00" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="日落" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_moonrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="07:10" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_moonrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="月升" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_line2_value_top_margin"
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_moonset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="18:00" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_moonset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="月落" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty_width"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_realfeel_or_prob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="43%" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_realfeel_or_prob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="PREDI" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_line2_value_top_margin"
+                android:textColor="@color/black_70"
+                android:textSize="@dimen/daily_new_detail_value_size"
+                android:id="@+id/text_daily_detail_value_rain_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="18mm" />
+
+            <TextView
+                android:layout_marginTop="@dimen/daily_new_detail_desc_top_margin"
+                android:textColor="@color/black_60"
+                android:textSize="@dimen/daily_new_detail_desc_size"
+                android:layout_marginBottom="4dp"
+                android:id="@+id/text_daily_detail_desc_rain_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:text="降雨量" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

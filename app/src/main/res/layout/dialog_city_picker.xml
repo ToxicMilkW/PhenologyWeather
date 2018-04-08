@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:text="Title"
+        android:maxLines="1"
+        android:id="@+id/dialog_picker_title"
+        android:textColor="@color/black_80"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.iap.phenologyweather.view.custom.WheelView
+            app:lineColor="#ff5789DC"
+            app:maskHeight="32dp"
+            app:noEmpty="true"
+            app:itemNumber="4"
+            app:normalTextColor="#777"
+            app:normalTextSize="14sp"
+            app:selectedTextColor="#ff000000"
+            app:selectedTextSize="17sp"
+            app:unitHeight="40dp"
+            android:id="@+id/dialog_picker_1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+        <com.iap.phenologyweather.view.custom.WheelView
+            android:layout_marginLeft="20dp"
+            app:lineColor="#ff5789DC"
+            app:maskHeight="32dp"
+            app:noEmpty="true"
+            app:itemNumber="4"
+            app:normalTextColor="#777"
+            app:normalTextSize="14sp"
+            app:selectedTextColor="#ff000000"
+            app:selectedTextSize="17sp"
+            app:unitHeight="40dp"
+            android:id="@+id/dialog_picker_2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text_picker_cancel"
+            android:textColor="@color/black_80"
+            android:textSize="18dp"
+            android:text="取消"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text_picker_ok"
+            android:textColor="@color/black_80"
+            android:textSize="18dp"
+            android:text="添加"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

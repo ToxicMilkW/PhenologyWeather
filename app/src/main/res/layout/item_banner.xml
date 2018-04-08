@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@drawable/bg_default"
+        android:id="@+id/img_banner_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_banner_text"
+        android:background="@color/black_30"
+        android:layout_marginTop="@dimen/actionbar_height"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/text_banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/white_70"
+            android:textSize="29dp" />
+
+        <TextView
+            android:maxLines="4"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/text_banner_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is description"
+            android:textColor="@color/white_60"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/text_banner_location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beijing"
+            android:textColor="@color/white_50"
+            android:textSize="14dp" />
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/text_banner_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4-10  5-18"
+            android:textColor="@color/white_50"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

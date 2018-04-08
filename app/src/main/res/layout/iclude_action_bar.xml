@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_action_bar"
+    android:background="@color/action_bar_bg"
+    android:layout_height="@dimen/actionbar_height">
+
+    <ImageView
+        android:padding="6dp"
+        android:layout_marginLeft="8dp"
+        android:tint="@color/action_bar_text_white"
+        android:src="@drawable/ic_arrow_back_white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img_actionbar_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="--"
+        android:id="@+id/text_actionbar_title"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:textColor="@color/action_bar_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_action_bar_more"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/text_actionbar_title"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_tan"
+        android:layout_width="8dp"
+        android:layout_height="8dp" />
+
+
+    <ImageView
+        android:padding="8dp"
+        android:visibility="gone"
+        android:layout_marginRight="8dp"
+        android:tint="@color/action_bar_text_white"
+        android:src="@drawable/ic_add_city"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/img_actionbar_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/cb_city_manage_edit"
+        android:layout_marginRight="8dp"
+        android:text="@string/city_manage_actionbar_edit"
+        android:textSize="15dp"
+        android:button="@null"
+        android:textColor="@color/action_bar_text_white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

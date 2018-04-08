@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_100"
+    tools:context="com.iap.phenologyweather.activity.LandscapeActivity">
+
+    <ScrollView
+        android:id="@+id/sv_landscape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/detail_scroll_padding_bottom">
+
+            <ImageView
+                android:id="@+id/img_landscape_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/phenology_detail_margin_left_right"
+                android:paddingRight="@dimen/phenology_detail_margin_left_right">
+
+                <TextView
+                    android:id="@+id/text_landscape_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/detail_title_margin_top"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="--"
+                    android:textColor="@color/phenology_title_color"
+                    android:textSize="24dp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/detail_title_margin_bottom"
+                    android:id="@+id/ll_landscape_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="景点地址："
+                        android:textColor="@color/phenology_title_color"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/text_landscape_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/phenology_desc_color"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/detail_land_desc_margin_top"
+                    android:id="@+id/ll_landscape_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="景点描述："
+                        android:textColor="@color/phenology_title_color"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/text_landscape_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/phenology_desc_color"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landscape_feature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_every_title_margin_top"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/phenology_detail_margin_left_right"
+                android:paddingRight="@dimen/phenology_detail_margin_left_right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="景观特点"
+                    android:textColor="@color/phenology_title_color"
+                    android:textSize="@dimen/detail_little_title_size" />
+
+
+                <TextView
+                    android:id="@+id/text_landscape_feature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="6dp"
+                    android:text="--"
+                    android:textColor="@color/phenology_desc_color"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landscape_funny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_every_title_margin_top"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/phenology_detail_margin_left_right"
+                android:paddingRight="@dimen/phenology_detail_margin_left_right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="景观趣闻"
+                    android:textColor="@color/phenology_title_color"
+                    android:textSize="@dimen/detail_little_title_size" />
+
+
+                <com.iap.phenologyweather.view.custom.ProportionalImageView
+                    android:id="@+id/img_landscape_funny"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:adjustViewBounds="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landscape_can_watch_what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_every_title_margin_top"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/phenology_detail_margin_left_right"
+                android:paddingRight="@dimen/phenology_detail_margin_left_right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="近期可观赏"
+                    android:textColor="@color/phenology_title_color"
+                    android:textSize="@dimen/detail_little_title_size" />
+
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/gl_landscape_can_watch_what"
+                    app:columnCount="3"
+                    android:layout_columnWeight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_landscape_poem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_every_title_margin_top"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/phenology_detail_margin_left_right"
+                android:paddingRight="@dimen/phenology_detail_margin_left_right">
+
+                <TextView
+                    android:id="@+id/text_landscape_poem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="景观诗词赏析"
+                    android:textColor="@color/phenology_title_color"
+                    android:textSize="@dimen/detail_little_title_size" />
+
+
+                <com.iap.phenologyweather.view.custom.ProportionalImageView
+                    android:id="@+id/img_landscape_poem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:adjustViewBounds="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/system_bar_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/action_bar_bg" />
+
+        <include layout="@layout/iclude_action_bar" />
+
+    </LinearLayout>
+
+</RelativeLayout>
